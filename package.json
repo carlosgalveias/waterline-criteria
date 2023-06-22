@@ -1,6 +1,6 @@
 {
   "name": "waterline-criteria",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Utility library for use in Sails adapters where you need to filter a list of output using a criteria object",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,12 @@
   "author": "Mike McNeil",
   "license": "MIT",
   "dependencies": {
-    "lodash": "3.10.1"
+    "bower": "^1.8.14",
+    "grunt": "^1.6.1",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-text-replace": "^0.4.0",
+    "lodash": "^4.17.21"
   },
   "testDependencies": {
     "mocha": "~1.12.0",
@@ -29,6 +34,6 @@
     "grunt-contrib-uglify": "~0.2.2"
   },
   "devDependencies": {
-    "mocha": "^2.0.1"
+    "mocha": "^10.2.0"
   }
 }

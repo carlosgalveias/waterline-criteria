@@ -354,8 +354,13 @@ function expectResults(opts) {
   var dataset = opts.dataset,
     criteria = opts.criteria,
     results = opts.results;
-
+  console.log({dataset, criteria, results})
+  try{
   var r = wc(dataset, criteria).results;
-  // console.log('Got results:',results);
+}catch(e){
+  console.error(e);
+  throw(e)
+}
+  console.log('Got results:',results, r);
   assert.deepEqual(results, r);
 }
